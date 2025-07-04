@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kazi Shoab - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Base Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ecf0f1;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        header, section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-align: center;
+            color: #f39c12;
+            text-shadow: 2px 2px #000;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+        h2, h3 {
+            color: #f1c40f;
+            margin-top: 30px;
+        }
+
+        img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #f1c40f;
+            display: block;
+            margin: 20px auto;
+        }
+
+        ol, ul {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        ul ul, ol ul {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .skills, .hobbies {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #f39c12;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        form {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        input, button {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: none;
+        }
+
+        input {
+            background: #fff;
+            color: #000;
+        }
+
+        button {
+            background-color: #f39c12;
+            color: #fff;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #e67e22;
+        }
+
+        .appointment {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .appointment input {
+            background: #fff;
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            color: #bdc3c7;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PERSONAL PORTFOLIO WEBPAGE</h1>
+        <p>Welcome to my personal portfolio webpage! This is a simple webpage that showcases my projects and skills.</p>
+    </header>
+
+    <section>
+        <h2>INTRODUCTION</h2>
+        <img src="file.jpeg" alt="Image Not Found">
+        <p style="text-align:center;">
+            My name is <strong>Kazi Shoab</strong> and I'm a student of Cumilla Polytechnic Institute. I'm currently learning web development and this part of my portfolio is dedicated to the projects I've worked on so far. I hope you find them interesting and informational!
+        </p>
+    </section>
+
+    <section class="skills">
+        <h3>Skills That I Have Gained So Far:</h3>
+        <ol>
+            <li>Microsoft Office / PowerPoint</li>
+            <li>Python basics</li>
+            <li>Application management using Python</li>
+            <li>C / C# / C++ Language</li>
+            <li>JavaScript</li>
+            <li>Database Management System</li>
+            <li>Data Structure and Algorithm
+                <ul>
+                    <li>Array</li>
+                    <li>SQL</li>
+                    <li>Linked List</li>
+                    <li>Stack</li>
+                    <li>Queue</li>
+                    <li>Graph</li>
+                    <li>Hash Table</li>
+                    <li>Sorting Algorithms</li>
+                    <li>Searching Algorithms</li>
+                    <li>Recursion</li>
+                    <li>Dynamic Programming</li>
+                </ul>
+            </li>
+            <li>Networking</li>
+            <li>Cyber Security
+                <ul>
+                    <li>Ethical Hacking</li>
+                    <li>Nmapping</li>
+                    <li>Metasploit</li>
+                    <li>Burp Suite</li>
+                    <li>Wireshark</li>
+                    <li>Social Engineering</li>
+                    <li>SQL Injection</li>
+                    <li>XSS</li>
+                    <li>Password Cracking</li>
+                    <li>Vulnerability Assessment</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section class="hobbies">
+        <h3>HOBBIES:</h3>
+        <ul>
+            <li>Gardening</li>
+            <li>Writing</li>
+            <li>Reading literature</li>
+            <li>Touring and Exploring</li>
+            <li>Meeting new people</li>
+            <li>Drinking tea during rain</li>
+        </ul>
+    </section>
+
+    <section>
+        <form onsubmit="handleForm(event)">
+            <h3 style="text-align:center; color:#f1c40f;">Contact Me</h3>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Submit</button>
+            <button type="button" onclick="alert('Thank you for your interest!')">HIRE ME</button>
+        </form>
+
+        <div class="appointment">
+            <strong>Place an Appointment:</strong><br>
+            <input type="datetime-local" required>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Kazi Shoab. All rights reserved.
+    </footer>
+
+    <script>
+        function handleForm(event) {
+            event.preventDefault();
+            alert("Form submitted! Thank you for connecting.");
+        }
+    </script>
+
+</body>
+</html>
